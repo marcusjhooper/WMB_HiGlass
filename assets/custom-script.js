@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://unpkg.com/higlass@1.5.7/dist/hglib.css" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+
+  <script crossorigin src="https://unpkg.com/react@16.6/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16.6/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/pixi.js@5/dist/pixi.min.js"></script>
+  <!-- To render HiGlass with the Canvas API include the pixi.js-legacy instead of pixi.js -->
+  <!-- <script crossorigin src="https://unpkg.com/pixi.js-legacy@5/dist/pixi-legacy.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.32.1/react-bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/higlass@1.6/dist/hglib.min.js"></script>
+
+</head>
+<body >
+  <div id="development-demo" style="width: 800px;
+  background-color: white;"></div>
+</body>
+
+<script>
+
+const hgApi = hglib.viewer(
+  document.getElementById('development-demo'),
+  'http://higlass.io/api/v1/viewconfs/?d=default',
+  {
+    bounded: false,
+  }
+);
+
+</script>
+</html>
